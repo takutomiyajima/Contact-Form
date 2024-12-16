@@ -19,6 +19,10 @@
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お名前</span>
+                    @error('first_name')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
+                    
                     <span class="form__label--required">必須</span>
                 </div>
                 <div class="form__group_name">
@@ -29,6 +33,9 @@
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">性別</span>
+                    @error('gender')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                     <span class="form__label--required">必須</span>
                 </div>
                 <div class="select-group">
@@ -49,6 +56,9 @@
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">メールアドレス</span>
+                    @error('email')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                     <span class="form__label--required">必須</span>
                 </div>
                 <input class="form_text" type="email" name="email" placeholder="例：test@example.com">
@@ -56,6 +66,9 @@
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">電話番号</span>
+                    @error('phone')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                     <span class="form__label--required">必須</span>
                 </div>
                 <input class="form_text" type="tel" name="phone" placeholder="080-1234-5678">
@@ -63,6 +76,9 @@
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">住所</span>
+                    @error('address')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                     <span class="form__label--required">必須</span>
                 </div>
                 <input class="form_text" type="text" name="address" placeholder="例：東京都渋谷区千駄ヶ谷1-2-3">
@@ -76,9 +92,12 @@
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お問い合わせの種類</span>
+                    @error('category_id')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                     <span class="form__label--required">必須</span>
                 </div>
-                <select name="inquiry_type" class="form_text">
+                <select name="category_id" class="form_text">
                     <option value="">選択してください</option>
                     <option value="1">商品のお届けについて</option>
                     <option value="2">商品の交換について</option>
@@ -90,9 +109,12 @@
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お問い合わせ内容</span>
+                    @error('detail')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                     <span class="form__label--required">必須</span>
                 </div>
-                <textarea name="inquiry_content" cols="30" rows="5" placeholder="お問い合わせ内容をご記載ください"></textarea>
+                <textarea name="detail" cols="30" rows="5" placeholder="お問い合わせ内容をご記載ください"></textarea>
             </div>
             <button type="submit" class="btn-submit">確認画面</button>
         </form>

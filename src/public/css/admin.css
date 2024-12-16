@@ -100,7 +100,7 @@ button, a.button {
     padding: 10px;
     background-color: #6b5b4d;
     color: #fff;
-    border: none;
+    border: white;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
@@ -108,8 +108,15 @@ button, a.button {
     margin: 15px;
 }
 
+.second-button {
+    background-color: #fff;
+    border: #6b5b4d;
+    color: #6b5b4d;
+}
+
 button:hover, a.button:hover {
     background-color: #5c4e40;
+    color: #fff;
 }
 
 a.login-link {
@@ -126,7 +133,7 @@ a.login-link:hover {
 }
 
 .table {
-    width: 100%;
+    width: 1000px;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
@@ -143,10 +150,6 @@ a.login-link:hover {
     color: #fff;
     font-weight: bold;
     white-space: nowrap;
-}
-
-.table tr:nth-child(even) {
-    background-color: #f9f8f6;
 }
 
 .table tr:hover {
@@ -201,3 +204,67 @@ a:hover {
     text-decoration: underline;
 }
 
+.error-message{
+    color: red;
+    margin-top: none;
+    margin-bottom: 10px;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border: 0.1px solid #978d83;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.search-detail{
+    margin: 5px;
+    border-right: 1px solid #ccc;
+    padding: 2px 8px;
+}
+
+.search-title {
+    margin-bottom: 5px; 
+    font-size: 13px;
+}
+
+.form-text{
+    width: 200px;
+    background-color: none;
+}
+
+.form-control{
+    border: none;
+    height: 45px;
+    color: #6b5b4d;
+    background-color: none;
+    border-radius: 5px;
+}
+
+.search-form{
+    align-items: center;
+}
+
+.hover-detail {
+    position: relative;
+    width: 150px;
+    font-size: 13px;
+}
+
+.detail-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.hover-detail:hover .detail-button {
+    display: inline-block;
+}

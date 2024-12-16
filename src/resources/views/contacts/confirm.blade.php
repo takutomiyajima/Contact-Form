@@ -1,22 +1,22 @@
 <?php
-$genderid = 0; 
+$gender_id = 0; 
 $category = ''; 
 
 if ($contact['gender'] === '男性') {
-    $genderid = 1;
+    $gender_id = 1;
 } elseif ($contact['gender'] === '女性') {
-    $genderid = 2;
+    $gender_id = 2;
 } else {
-    $genderid = 3;
+    $gender_id = 3;
 }
 
-if ($contact['inquiry_type'] == 1) {
+if ($contact['category_id'] == 1) {
     $category = '商品のお届けについて';
-} elseif ($contact['inquiry_type'] == 2) {
+} elseif ($contact['category_id'] == 2) {
     $category = '商品の交換について';
-} elseif ($contact['inquiry_type'] == 3) {
+} elseif ($contact['category_id'] == 3) {
     $category = '商品トラブル';
-} elseif ($contact['inquiry_type'] == 4) {
+} elseif ($contact['category_id'] == 4) {
     $category = 'ショップへのお問い合わせ';
 } else {
     $category = 'その他';
@@ -56,7 +56,7 @@ if ($contact['inquiry_type'] == 1) {
                         <th class="confirm-table__header">性別</th>
                             <td class="confirm-table__text">
                                 <p class="input_text">{{ $contact['gender'] }}</p>
-                                <input type="hidden" name="gender" value="{{ $genderid }}" readonly />
+                                <input type="hidden" name="gender" value="{{ $gender_id }}" readonly />
                             </td>
                     </tr>
                     <tr class="confirm-table__row">
@@ -87,13 +87,13 @@ if ($contact['inquiry_type'] == 1) {
                         <th class="confirm-table__header">お問い合わせの種類</th>
                             <td class="confirm-table__text">
                                 <p class="input_text">{{$category}}</p>
-                                <input type="hidden" name="category_id" value="{{ $contact['inquiry_type'] }}" readonly />
+                                <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}" readonly />
                             </td>
                     </tr>
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header">お問い合わせ内容</th>
                             <td class="confirm-table__text">
-                                <input type="text" name="detail" value="{{ $contact['inquiry_content'] }}" readonly />
+                                <input type="text" name="detail" value="{{ $contact['detail'] }}" readonly />
                             </td>
                     </tr>
                 </table>

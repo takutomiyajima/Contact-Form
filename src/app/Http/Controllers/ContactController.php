@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
@@ -11,8 +12,8 @@ class ContactController extends Controller
         return view('index');
     }
 
-    public function confirm(Request $request){
-        $contact = $request -> only(['first_name','last_name','gender','email','phone','address','building','inquiry_type','inquiry_content']);
+    public function confirm(ContactRequest $request){
+        $contact = $request -> only(['first_name','last_name','gender','email','phone','address','building','category_id','detail']);
         return view('contacts/confirm',['contact' => $contact]);
     }
 

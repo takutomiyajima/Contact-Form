@@ -28,5 +28,7 @@ Route::post('/register', [AdminController::class, 'register']);
 Route::post('/logout', [AdminController::class, 'logout'])->name('logout');
 
 Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard')->middleware('auth');
-Route::post('/search', [SearchController::class, 'search'])->middleware('auth');
+Route::get('/admin', [SearchController::class, 'index'])->name('admin.index');
+Route::get('/admin/export', [SearchController::class, 'export'])->name('admin.export');
 Route::post('/export', [UserController::class, 'export'])->middleware('auth');
+Route::get('/admin/{id}', [SearchController::class, 'show'])->name('admin.show');
