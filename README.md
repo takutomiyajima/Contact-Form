@@ -1,7 +1,7 @@
 # お問い合わせフォーム
 
 ## 環境構築
-- git clone
+- git clone git@github.com:takutomiyajima/Contact-Form.git
 - docker-compose up -d --build
 
  Laravel環境構築
