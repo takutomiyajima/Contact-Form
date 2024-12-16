@@ -1,0 +1,74 @@
+body {
+    font-family: "Hiragino Mincho Pro", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f8f7;
+}
+
+main {
+    text-align: center;
+}
+
+.thanks_component {
+    margin-bottom: 20px; /* 下部に余白を設定 */
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.thanks_title {
+    font-size: 24px;
+    color: #7a6c5d;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px; /* 角を丸める */
+}
+
+.form {
+    margin: 0;
+    z-index: 4;
+}
+
+.thanks_button {
+    font-family: "Hiragino Mincho Pro", serif;
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    background-color: #7a6c5d;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+}
+
+.thanks_button:hover {
+    background-color: #5c5044;
+}
+
+.thanks_message {
+    font-size: 14px;
+    color: #7a6c5d;
+    margin-top: 0; 
+}
+
+.thanks_component::before {
+    font-family: "Hiragino Mincho Pro", serif;
+    content: "Thank you";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 240px;
+    color: #5c5044;
+    z-index: 0;
+    white-space: nowrap;
+    opacity: 0.05;
+}
+

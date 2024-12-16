@@ -1,0 +1,107 @@
+.header-title {
+    font-size: 24px;
+    color: #7a6c5d;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.confirm {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: #7a6c5d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.confirm-table {
+    width: 100%;
+}
+
+.confirm-table__inner {
+    width: 100%;
+}
+
+.confirm-table__row {
+    border-bottom: 0.5px solid #ddd;
+}
+
+.confirm-table__header {
+    text-align: left;
+    padding: 15px;
+    color: #f2f2f2;
+    width: 30%;
+    background-color: #7a6c5d;
+}
+
+.confirm-table__text input {
+    color: #7a6c5d;
+    font-family: "Hiragino Mincho Pro", serif;
+    font-weight: lighter;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #f1f1f1;
+    background-color: #f9f8f7;
+}
+
+.input_text {
+    margin: 0;
+    display: inline-block;
+    color: #7a6c5d;
+    font-family: "Hiragino Mincho Pro", serif;
+    font-weight: lighter;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #f1f1f1;
+    background-color: #f9f8f7;
+}
+
+.confirm-table__text input:focus,
+.input_text:focus {
+    border-color: #7a6c5d;
+    outline: none;
+}
+
+.form__button {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form__button-submit {
+    font-family: "Hiragino Mincho Pro", serif;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7a6c5d;
+    border: none;
+    border-radius: 4px;
+}
+
+.form__button-reset {
+    font-family: "Hiragino Mincho Pro", serif;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #7a6c5d;
+    background-color: #fff;
+    border: 1px solid #7a6c5d;
+    border-radius: 4px;
+}
+
+.form__button-submit:hover {
+    background-color: #5c5044;
+}
