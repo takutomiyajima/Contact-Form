@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2>管理画面</h2>
+    <h2 class="container-title">Admin</h2>
     <table class="table">
         <thead>
             <tr>
