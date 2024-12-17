@@ -220,6 +220,7 @@ a:hover {
     border-radius: 5px;
     border: 0.1px solid #978d83;
     box-shadow: 3px 3px 3px #ccc;
+    margin: 10px;
 }
 
 .search-detail{

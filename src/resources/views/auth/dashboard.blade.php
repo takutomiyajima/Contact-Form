@@ -41,12 +41,12 @@
             <button type="submit" class="search-button">検索</button>
         </div>
 
-        <div class="row mt-3">
-            <div class="col-md-3">
-                <a href="{{ route('admin.index') }}" class="btn btn-secondary w-100">検索条件をリセット</a>
+        <div class="search">
+            <div class="search-detail">
+                <a href="{{ route('admin.index') }}" class="search-button">検索条件をリセット</a>
             </div>
-            <div class="col-md-3">
-                <a href="{{ route('admin.export') }}" class="btn btn-success w-100">エクスポート</a>
+            <div class="search-detail">
+                <a href="{{ route('admin.export') }}" class="search-button">エクスポート</a>
             </div>
         </div>
     </form>
